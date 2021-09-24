@@ -11,11 +11,7 @@
 -->
 
 <!-- Do NOT run auto format on this file -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="net.gsantner.markor"
-    tools:targetApi="jelly_bean">
-
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="net.gsantner.markor" tools:targetApi="jelly_bean">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,25 +19,15 @@
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
-
-
-    <uses-feature
-        android:name="android.hardware.touchscreen"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.type.pc"
-        android:required="false" />
-
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.type.pc" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
     <application
         android:name=".App"
         android:allowBackup="true"
         android:appCategory="productivity"
         android:fullBackupContent="@xml/full_backup_rules"
-        android:icon="@drawable/screen2_editor"
+        android:icon="@drawable/ic_launcher"
         android:isGame="false"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
