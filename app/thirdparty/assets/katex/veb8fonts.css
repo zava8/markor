@@ -1,48 +1,24 @@
-@font-face { font-family: 'HinDi'; src: url('veb8fonts/HinDi.ttf') format('truetype');
+@font-face { font-family: 'hindi_ascii510'; src: url('veb8fonts/hindi_ascii510.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'Hinglish'; src: url('veb8fonts/Hinglish.ttf') format('truetype');
+@font-face { font-family: 'hindi_hscii810'; src: url('veb8fonts/hindi_hscii810.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'hinwi8'; src: url('veb8fonts/hinwi8.ttf') format('truetype');
+@font-face { font-family: 'hindi_binary_ascii510'; src: url('veb8fonts/hindi_binary_ascii510.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'Hnskrit'; src: url('veb8fonts/Hnskrit.ttf') format('truetype');
+@font-face { font-family: 'hindi_binary_hscii810'; src: url('veb8fonts/hindi_binary_hscii810.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'lato510cC'; src: url('veb8fonts/lato510cC.ttf') format('truetype');
+@font-face { font-family: 'inglish_ascii510'; src: url('veb8fonts/inglish_ascii510.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'lato810_binvert'; src: url('veb8fonts/lato810_binvert.ttf') format('truetype');
+@font-face { font-family: 'inglish_hscii810'; src: url('veb8fonts/inglish_hscii810.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'lato510'; src: url('veb8fonts/lato510.ttf') format('truetype');
+@font-face { font-family: 'inglish_binary_ascii510'; src: url('veb8fonts/inglish_binary_ascii510.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'lato810'; src: url('veb8fonts/lato810.ttf') format('truetype');
+@font-face { font-family: 'inglish_binary_hscii810'; src: url('veb8fonts/inglish_binary_hscii810.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
-}
-@font-face { font-family: 'lato510u_binvert'; src: url('veb8fonts/lato510u_binvert.ttf') format('truetype');
-    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
-}
-@font-face { font-family: 'lato810u'; src: url('veb8fonts/lato810u.ttf') format('truetype');
-    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
-}
-@font-face { font-family: 'lato510ucC'; src: url('veb8fonts/lato510ucC.ttf') format('truetype');
-    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
-}
-@font-face { font-family: 'lato510u'; src: url('veb8fonts/lato510u.ttf') format('truetype');
-    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
-}
-@font-face { font-family: 'lato510_binvert'; src: url('veb8fonts/lato510_binvert.ttf') format('truetype');
-    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
-}
-@font-face { font-family: 'lato510cC_binvert'; src: url('veb8fonts/lato510cC_binvert.ttf') format('truetype');
-    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
-}
-@font-face { font-family: 'lato810u_binvert'; src: url('veb8fonts/lato810u_binvert.ttf') format('truetype');
-     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
-}
-@font-face { font-family: 'lato510ucc_binvert'; src: url('veb8fonts/lato510ucc_binvert.ttf') format('truetype');
- font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
