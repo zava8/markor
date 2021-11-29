@@ -1,24 +1,30 @@
 @font-face { font-family: 'hindi_ascii510'; src: url('veb8fonts/hindi_ascii510.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'hindi_hscii810'; src: url('veb8fonts/hindi_hscii810.ttf') format('truetype');
+@font-face { font-family: 'hindi8'; src: url('veb8fonts/hindi8.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'hindi_binary_ascii510'; src: url('veb8fonts/hindi_binary_ascii510.ttf') format('truetype');
+@font-face { font-family: 'hindi5binary'; src: url('veb8fonts/hindi5binary.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'hindi_binary_hscii810'; src: url('veb8fonts/hindi_binary_hscii810.ttf') format('truetype');
+@font-face { font-family: 'hindi8binary'; src: url('veb8fonts/hindi8binary.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'inglish_ascii510'; src: url('veb8fonts/inglish_ascii510.ttf') format('truetype');
+@font-face { font-family: 'kvz5'; src: url('veb8fonts/kvz5.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'inglish_hscii810'; src: url('veb8fonts/inglish_hscii810.ttf') format('truetype');
+@font-face { font-family: 'kvz8'; src: url('veb8fonts/kvz8.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'inglish_binary_ascii510'; src: url('veb8fonts/inglish_binary_ascii510.ttf') format('truetype');
+@font-face { font-family: 'kvz5binary'; src: url('veb8fonts/kvz5binary.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'inglish_binary_hscii810'; src: url('veb8fonts/inglish_binary_hscii810.ttf') format('truetype');
+@font-face { font-family: 'kvz8binary'; src: url('veb8fonts/kvz8binary.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'kvz5c'; src: url('veb8fonts/kvz5c.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'ssu5p'; src: url('veb8fonts/ssu5p.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
