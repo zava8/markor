@@ -54,7 +54,7 @@ public class FontPreferenceCompat extends ListPreference {
     public static File additionalyCheckedFolder = null;
     public static final FilenameFilter FONT_FILENAME_FILTER = (file, s) -> s.toLowerCase().endsWith(".ttf") || s.toLowerCase().endsWith(".otf");
     private final static String ANDROID_ASSET_DIR = "/android_asset/";
-    private String _defaultValue;private String[] _fontNames = { "u5cdot" };private String[] _fontValues = {"u5cdot"};
+    private String _defaultValue;private String[] _fontNames = { "kvz5" };private String[] _fontValues = {"kvz5"};
 //    private String _defaultValue;private String[] _fontNames = { "Roboto Regular" };private String[] _fontValues = {"sans-serif-regular"};
     public FontPreferenceCompat(Context context) { super(context);loadFonts(context, null); }
     public FontPreferenceCompat(Context context, AttributeSet attrs) { super(context, attrs);loadFonts(context, attrs); }
@@ -85,9 +85,10 @@ public class FontPreferenceCompat extends ListPreference {
         }
         Spannable[] fontText = new Spannable[_fontNames.length];
         for (int i = 0; i < _fontNames.length; i++) {
-            fontText[i] = new SpannableString(_fontNames[i] + "\n" + _fontValues[i]);
+//            fontText[i] = new SpannableString(_fontNames[i] + "\n" + _fontValues[i]);
+            fontText[i] = new SpannableString(_fontNames[i] ) ; // vimal + "\n" + _fontValues[i]);
             fontText[i].setSpan(new TypefaceObjectSpan(typeface(getContext(), _fontValues[i], null)), 0, _fontNames[i].length(), 0);
-            fontText[i].setSpan(new RelativeSizeSpan(0.7f), _fontNames[i].length() + 1, fontText[i].length(), 0);
+//            fontText[i].setSpan(new RelativeSizeSpan(0.7f), _fontNames[i].length() + 1, fontText[i].length(), 0);
 
         }
         setDefaultValue(_defaultValue);setEntries(fontText);setEntryValues(_fontValues);
