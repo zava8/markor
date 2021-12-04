@@ -1,4 +1,28 @@
-@font-face { font-family: 'hindi_ascii510'; src: url('veb8fonts/hindi_ascii510.ttf') format('truetype');
+@font-face { font-family: 'hindi5'; src: url('veb8fonts/hindi5.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'gurumukhi5'; src: url('veb8fonts/gurumukhi5.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'oriya5'; src: url('veb8fonts/oriya5.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'guzrati5'; src: url('veb8fonts/guzrati5.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'tamil5'; src: url('veb8fonts/tamil5.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'telugu5'; src: url('veb8fonts/telugu5.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'kannada5'; src: url('veb8fonts/kannada5.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'malayalam5'; src: url('veb8fonts/malayalam5.ttf') format('truetype');
+    font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
+}
+@font-face { font-family: 'bengali5'; src: url('veb8fonts/bengali5.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
 @font-face { font-family: 'hindi8'; src: url('veb8fonts/hindi8.ttf') format('truetype');
