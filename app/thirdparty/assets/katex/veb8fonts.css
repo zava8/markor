@@ -10,7 +10,7 @@
 @font-face { font-family: 'guzrati5'; src: url('veb8fonts/guzrati5.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'tamil5'; src: url('veb8fonts/tamil5.ttf') format('truetype');
+@font-face { font-family: 'tmil5'; src: url('veb8fonts/tmil5.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
 @font-face { font-family: 'telugu5'; src: url('veb8fonts/telugu5.ttf') format('truetype');
@@ -25,7 +25,7 @@
 @font-face { font-family: 'bengali5'; src: url('veb8fonts/bengali5.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
-@font-face { font-family: 'kvz5'; src: url('veb8fonts/kvz5.ttf') format('truetype');
+@font-face { font-family: 'u5'; src: url('veb8fonts/u5.ttf') format('truetype');
     font-weight: normal; font-style: normal; font-display: swap; unicode-range: U+0-9F;
 }
 @font-face { font-family: 'ssu5p'; src: url('veb8fonts/ssu5p.ttf') format('truetype');
