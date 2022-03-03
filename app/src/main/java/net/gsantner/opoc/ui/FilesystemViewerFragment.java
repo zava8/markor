@@ -647,8 +647,7 @@ public class FilesystemViewerFragment extends GsFragmentBase
                 reloadCurrentFolder();
             }
 
-            @Override
-            public void onFsViewerConfig(FilesystemViewerData.Options dopt) {
+            @Override public void onFsViewerConfig(FilesystemViewerData.Options dopt) {
                 dopt.titleText = R.string.import_from_device;
                 dopt.doSelectMultiple = true;
                 dopt.doSelectFile = true;
