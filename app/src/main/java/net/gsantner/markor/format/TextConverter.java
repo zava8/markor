@@ -136,7 +136,8 @@ public abstract class TextConverter {
         String font = appSettings.getFontFamily();
         if (font.startsWith("/")) {
             html += CSS_S + "@font-face { font-family: u5cdot; src: url('file://" + font + "'); }" + CSS_E;
-            font = "u5cdot";
+//            font = "u5cdot";
+            font = "hin54";
         }
 
         // Remove duplicate style blocks

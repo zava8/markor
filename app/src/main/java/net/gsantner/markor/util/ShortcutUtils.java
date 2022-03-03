@@ -61,9 +61,7 @@ public class ShortcutUtils {
             final AppSettings appSettings = new AppSettings(context);
 
             // Create the to-do shortcut
-            Intent openTodo = new Intent(context, DocumentRelayActivity.class)
-                    .setAction(Intent.ACTION_EDIT)
-                    .setData(Uri.fromFile(appSettings.getTodoFile()));
+            Intent openTodo = new Intent(context, DocumentRelayActivity.class).setAction(Intent.ACTION_EDIT).setData(Uri.fromFile(appSettings.getTodoFile()));
 
             ShortcutInfo shortcutToDo = new ShortcutInfo.Builder(context, ID_TO_DO)
                     .setShortLabel(createShortLabel(context.getString(R.string.todo)))
@@ -74,9 +72,7 @@ public class ShortcutUtils {
             newShortcuts.add(shortcutToDo);
 
             // Create the QuickNote shortcut
-            Intent openQuickNote = new Intent(context, DocumentRelayActivity.class)
-                    .setAction(Intent.ACTION_EDIT)
-                    .setData(Uri.fromFile(appSettings.getQuickNoteFile()));
+            Intent openQuickNote = new Intent(context, DocumentRelayActivity.class).setAction(Intent.ACTION_EDIT).setData(Uri.fromFile(appSettings.getQuickNoteFile()));
 
             ShortcutInfo shortcutQuickNote = new ShortcutInfo.Builder(context, ID_QUICK_NOTE)
                     .setShortLabel(createShortLabel(context.getString(R.string.quicknote)))

@@ -82,11 +82,8 @@ public class DocumentShareIntoFragment extends GsFragmentBase {
         return R.layout.document__fragment__share_into;
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        AppSettings as = new AppSettings(view.getContext());
-        ContextUtils cu = new ContextUtils(view.getContext());
+    @Override public void onViewCreated(@NonNull View view, Bundle savedInstanceState) { super.onViewCreated(view, savedInstanceState);
+        AppSettings as = new AppSettings(view.getContext());ContextUtils cu = new ContextUtils(view.getContext());
         cu.setAppLanguage(as.getLanguage());
         String sharedText = getArguments() != null ? getArguments().getString(EXTRA_SHARED_TEXT, "") : "";
         sharedText = sharedText.trim();

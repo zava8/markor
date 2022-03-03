@@ -75,11 +75,7 @@
         android:title="@string/view_mode"
         app:showAsAction="always" />
 
-    <item
-        android:id="@+id/action_edit"
-        android:icon="@drawable/ic_edit_black_24dp"
-        android:title="@string/edit_mode"
-        app:showAsAction="always" />
+    <item android:id="@+id/action_edit" android:icon="@drawable/ic_edit_black_24dp" android:title="@string/edit_mode" app:showAsAction="always" />
 
     <item
         android:id="@+id/action_search"
