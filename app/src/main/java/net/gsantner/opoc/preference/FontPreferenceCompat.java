@@ -80,7 +80,8 @@ public class FontPreferenceCompat extends ListPreference {
             }
         }
         for (File file : getAdditionalFonts()) {
-            _fontNames = appendToArray(_fontNames, file.getName().replace(".ttf", "").replace(".TTF", ""));
+//            _fontNames = appendToArray(_fontNames, file.getName().replace(".ttf", "").replace(".TTF", ""));
+            _fontNames = appendToArray(_fontNames, file.getName().replace(".woff", "")) ; // .replace(".TTF", ""));
             _fontValues = appendToArray(_fontValues, file.getAbsolutePath());
         }
         Spannable[] fontText = new Spannable[_fontNames.length];
@@ -95,7 +96,8 @@ public class FontPreferenceCompat extends ListPreference {
     }
     public static Typeface typeface(Context context, String familyOrFilepath, Integer typefaceStyle) {
         if (typefaceStyle == null) typefaceStyle = Typeface.NORMAL;
-        if (!familyOrFilepath.startsWith("/")) return Typeface.create(familyOrFilepath, typefaceStyle); else {
+        if (!familyOrFilepath.startsWith("/")) return Typeface.create(familyOrFilepath, typefaceStyle);
+        else {
             try {
                 if (familyOrFilepath.startsWith(ANDROID_ASSET_DIR)) {
                     return Typeface.createFromAsset(context.getAssets(), familyOrFilepath.substring(ANDROID_ASSET_DIR.length()));
@@ -119,32 +121,9 @@ public class FontPreferenceCompat extends ListPreference {
     @SuppressWarnings("ResultOfMethodCallIgnored") public List<File> getAdditionalFonts() {
         final ArrayList<File> additionalFonts = new ArrayList<>();
         try {
-            for (String filename : getContext().getAssets().list("fonts")) additionalFonts.add(new File(ANDROID_ASSET_DIR + "fonts", filename));
+            for (String filename : getContext().getAssets().list("fonts"))
+                additionalFonts.add(new File(ANDROID_ASSET_DIR + "fonts", filename));
         } catch (Exception ignored) { }
-        final List<File> checkedDirs = new ArrayList<>(Arrays.asList(
-                new File(getContext().getFilesDir(), ".app/fonts"), new File(getContext().getFilesDir(), ".app/Fonts"),
-                additionalyCheckedFolder,
-                new File(Environment.getExternalStorageDirectory(), "fonts"), new File(Environment.getExternalStorageDirectory(), "Fonts")
-        ));
-        for (File externalFileDir : ContextCompat.getExternalFilesDirs(getContext(), null)) {
-            if (externalFileDir == null || externalFileDir.getAbsolutePath() == null) continue;
-            checkedDirs.add(new File(externalFileDir.getAbsolutePath().replaceFirst("/Android/data/.*$", "/fonts")));
-            checkedDirs.add(new File(externalFileDir.getAbsolutePath().replaceFirst("/Android/data/.*$", "/Fonts")));
-            checkedDirs.add(new File(externalFileDir.getAbsolutePath(), "/fonts"));
-            checkedDirs.add(new File(externalFileDir.getAbsolutePath(), "/Fonts"));
-        }
-        for (File checkedDir : checkedDirs) {
-            if (checkedDir != null && checkedDir.exists()) {
-                File[] checkedDirFiles = checkedDir.listFiles(FONT_FILENAME_FILTER);
-                if (checkedDirFiles != null) {
-                    for (File font : checkedDirFiles) {
-                        if (!additionalFonts.contains(new File(font.getAbsolutePath().replace("/Fonts/", "/fonts/")))) {
-                            additionalFonts.add(font);
-                        }
-                    }
-                }
-            }
-        }
         return additionalFonts;
     }
     private static String[] appendToArray(String[] arr, String append) {
@@ -153,8 +132,7 @@ public class FontPreferenceCompat extends ListPreference {
         return arro.toArray(new String[arr.length + 1]);
     }
     public class TypefaceObjectSpan extends MetricAffectingSpan {
-        private final Typeface _typeface;
-        public TypefaceObjectSpan(final Typeface typeface) { _typeface = typeface; }
+        private final Typeface _typeface; public TypefaceObjectSpan(final Typeface typeface) { _typeface = typeface; }
         @Override public void updateDrawState(final TextPaint drawState) { apply(drawState); }
         @Override public void updateMeasureState(final TextPaint paint) { apply(paint); }
         private void apply(final Paint paint) {
