@@ -54,7 +54,7 @@ public class FontPreferenceCompat extends ListPreference {
     public static File additionalyCheckedFolder = null;
     public static final FilenameFilter FONT_FILENAME_FILTER = (file, s) -> s.toLowerCase().endsWith(".ttf") || s.toLowerCase().endsWith(".otf");
     private final static String ANDROID_ASSET_DIR = "/android_asset/";
-    private String _defaultValue;private String[] _fontNames = { "u5" };private String[] _fontValues = {"u5"};
+    private String _defaultValue;private String[] _fontNames = { "latin54" };private String[] _fontValues = {"latin54"};
 //    private String _defaultValue;private String[] _fontNames = { "Roboto Regular" };private String[] _fontValues = {"sans-serif-regular"};
     public FontPreferenceCompat(Context context) { super(context);loadFonts(context, null); }
     public FontPreferenceCompat(Context context, AttributeSet attrs) { super(context, attrs);loadFonts(context, attrs); }
